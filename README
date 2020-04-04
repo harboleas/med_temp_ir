@@ -1,0 +1,11 @@
+Proyecto para medir la temperatura corporal de las personas utilizando una camara termica
+
+CITEDEF - DVA - COVID-19
+
+Requerimientos:
+* Python 3
+* numpy
+* PySide2
+* opencv
+
+
