@@ -5,6 +5,7 @@ CITEDEF - DVA - COVID-19
 Requerimientos:
 * Python 3
 * numpy
+* Qt5
 * PySide2
 * opencv
 
