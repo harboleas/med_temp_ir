@@ -62,7 +62,7 @@
      <x>20</x>
      <y>60</y>
      <width>261</width>
-     <height>421</height>
+     <height>531</height>
     </rect>
    </property>
    <property name="font">
@@ -90,7 +90,7 @@
       <x>10</x>
       <y>40</y>
       <width>241</width>
-      <height>372</height>
+      <height>471</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -311,6 +311,87 @@
           </font>
          </property>
          <property name="text">
+          <string>scaleFactor:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="scaleFactor">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="minimum">
+          <double>1.010000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>2.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.010000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QLabel" name="label_11">
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>minNeighbors</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="minNeighbors">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>4</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_10">
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
           <string>Umbral de fiebre:</string>
          </property>
         </widget>
@@ -339,8 +420,8 @@
   <widget class="QPushButton" name="unlock">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>500</y>
+     <x>50</x>
+     <y>610</y>
      <width>91</width>
      <height>41</height>
     </rect>
@@ -362,8 +443,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>500</y>
+     <x>160</x>
+     <y>610</y>
      <width>88</width>
      <height>41</height>
     </rect>
