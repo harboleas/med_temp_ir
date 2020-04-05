@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'gui.ui',
 # licensing of 'gui.ui' applies.
 #
-# Created: Sat Apr  4 22:35:34 2020
+# Created: Sun Apr  5 18:12:43 2020
 #      by: pyside2-uic  running on PySide2 5.11.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -136,7 +136,7 @@ class Ui_Dialog(object):
         self.emisividad.setFont(font)
         self.emisividad.setMaximum(1.0)
         self.emisividad.setSingleStep(0.01)
-        self.emisividad.setProperty("value", 0.97)
+        self.emisividad.setProperty("value", 0.98)
         self.emisividad.setObjectName("emisividad")
         self.horizontalLayout_3.addWidget(self.emisividad)
         self.verticalLayout.addLayout(self.horizontalLayout_3)
@@ -172,7 +172,7 @@ class Ui_Dialog(object):
         self.scaleFactor.setMinimum(1.01)
         self.scaleFactor.setMaximum(2.0)
         self.scaleFactor.setSingleStep(0.01)
-        self.scaleFactor.setProperty("value", 1.1)
+        self.scaleFactor.setProperty("value", 1.3)
         self.scaleFactor.setObjectName("scaleFactor")
         self.horizontalLayout_4.addWidget(self.scaleFactor)
         self.verticalLayout.addLayout(self.horizontalLayout_4)
@@ -191,7 +191,7 @@ class Ui_Dialog(object):
         font.setWeight(50)
         font.setBold(False)
         self.minNeighbors.setFont(font)
-        self.minNeighbors.setMinimum(1)
+        self.minNeighbors.setMinimum(0)
         self.minNeighbors.setMaximum(10)
         self.minNeighbors.setProperty("value", 4)
         self.minNeighbors.setObjectName("minNeighbors")
@@ -212,6 +212,8 @@ class Ui_Dialog(object):
         font.setWeight(50)
         font.setBold(False)
         self.umbral_fiebre.setFont(font)
+        self.umbral_fiebre.setDecimals(1)
+        self.umbral_fiebre.setSingleStep(0.1)
         self.umbral_fiebre.setProperty("value", 37.7)
         self.umbral_fiebre.setObjectName("umbral_fiebre")
         self.horizontalLayout_6.addWidget(self.umbral_fiebre)
@@ -242,7 +244,7 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         Dialog.setWindowTitle(QtWidgets.QApplication.translate("Dialog", "Medición de temperatura corporal IR - CITEDEF - COVID-19", None, -1))
         self.groupBox.setTitle(QtWidgets.QApplication.translate("Dialog", "Configuración", None, -1))
-        self.label_2.setText(QtWidgets.QApplication.translate("Dialog", "Rango de medición", None, -1))
+        self.label_2.setText(QtWidgets.QApplication.translate("Dialog", "Rango de medición (cuerpo negro)", None, -1))
         self.label_3.setText(QtWidgets.QApplication.translate("Dialog", "Temp. Mínima:", None, -1))
         self.label_4.setText(QtWidgets.QApplication.translate("Dialog", "Temp. Máxima:", None, -1))
         self.label_8.setText(QtWidgets.QApplication.translate("Dialog", "Caracteristica de la superficie", None, -1))

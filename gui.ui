@@ -108,7 +108,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Rango de medición</string>
+        <string>Rango de medición (cuerpo negro)</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -257,7 +257,7 @@
           <double>0.010000000000000</double>
          </property>
          <property name="value">
-          <double>0.970000000000000</double>
+          <double>0.980000000000000</double>
          </property>
         </widget>
        </item>
@@ -336,7 +336,7 @@
           <double>0.010000000000000</double>
          </property>
          <property name="value">
-          <double>1.100000000000000</double>
+          <double>1.300000000000000</double>
          </property>
         </widget>
        </item>
@@ -369,7 +369,7 @@
           </font>
          </property>
          <property name="minimum">
-          <number>1</number>
+          <number>0</number>
          </property>
          <property name="maximum">
           <number>10</number>
@@ -406,6 +406,12 @@
            <weight>50</weight>
            <bold>false</bold>
           </font>
+         </property>
+         <property name="decimals">
+          <number>1</number>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
          </property>
          <property name="value">
           <double>37.700000000000003</double>
