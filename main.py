@@ -30,7 +30,8 @@ class AppWindow(QtWidgets.QDialog, gui.Ui_Dialog):
         self.timer.start(33)
 
         # Carga el XML para reconocimiento facial
-        self.face_detect = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+        self.face_detect = cv2.CascadeClassifier(
+                                "lbpcascade_frontalface.xml")
 
         self.show()
 
@@ -43,14 +44,14 @@ class AppWindow(QtWidgets.QDialog, gui.Ui_Dialog):
         if not ok:
             #Cuando se terminan los videos, comienza desde el principio
             self.camara.release()
-            self.i = (self.i + 1) % 2
+            self.i = (self.i + 1) % 3
             self.camara = cv2.VideoCapture("video_"+str(self.i)+".mp4")
             # self.img.setText("Sin video")
             return
 
         # Conversion a gris para deteccion de rostros
         frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        frame_gray_eh = cv2.equalizeHist(frame_gray)
+#        frame_gray_eh = cv2.equalizeHist(frame_gray)
 
         frame[:,:,0] = frame_gray
         frame[:,:,1] = frame_gray
@@ -59,7 +60,7 @@ class AppWindow(QtWidgets.QDialog, gui.Ui_Dialog):
         # Deteccion de los rostros 
         a = self.scaleFactor.value()
         b = self.minNeighbors.value()
-        faces = self.face_detect.detectMultiScale(frame_gray_eh, a, b)
+        faces = self.face_detect.detectMultiScale(frame_gray, a, b)
 
         # Procesamiento de cada rostro
         for (x, y, w, h) in faces:
