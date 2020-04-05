@@ -1,5 +1,8 @@
 NOTAS:
 
+* Publicaciones relevantes para la deteccion de caras en IR:
+https://www.researchgate.net/publication/322601448_Algorithms_for_Face_Detection_on_Infrared_Thermal_Images
+
 * Imagenes de caras en IR para entrenar un clasificador haar
 http://vcipl-okstate.org/pbvs/bench/Data/04/download.html
 

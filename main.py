@@ -31,7 +31,7 @@ class AppWindow(QtWidgets.QDialog, gui.Ui_Dialog):
 
         # Carga el XML para reconocimiento facial
         self.face_detect = cv2.CascadeClassifier(
-                                "lbpcascade_frontalface.xml")
+                                "haarcascade_frontalface_default.xml")
 
         self.show()
 
